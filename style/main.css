@@ -246,7 +246,7 @@ body{
 .portfolioContainer .two .image{
   height: 90%;
   width: 90%;
-  background-image: url('../assets/drinksOnUs.png');
+  background-image: url('../assets/drinksonUs.png');
   background-size: cover;
   background-position: center;
 }
@@ -254,7 +254,7 @@ body{
 .portfolioContainer .three .image{
   height: 90%;
   width: 90%;
-  background-image: url('../assets/movieBusters.png');
+  background-image: url('../assets/movieBuster.png');
   background-size: cover;
   background-position: left;
 }
