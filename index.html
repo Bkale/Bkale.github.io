@@ -3,111 +3,129 @@
   <head>
     <meta charset="utf-8">
     <title></title>
-    <link rel="stylesheet" href="/index.css">
-    <link rel="stylesheet" href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="scripts/index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/components/icon.min.css">
+    <link rel="stylesheet" href="./style/main.css">
   </head>
   <body>
-    <div class="bg-image"></div>
-    <header class="mainHeader">
-      <div class="content">
-        <section>
-          <h1>Babajide Kale</h1>
-          <div class="break"></div>
-          <h2>Web Developer/ Photography</h2>
-          <h3>Bkale09@gmail.com</h3>
-          <div class="links">
-            <div class="iconsContainer">
-              <a href="https://github.com/Bkale"><i class="fa fa-github"></i></a>
-              <a href="mailto:bkale09@gmail.com"><i class="fa fa-medium"></i></a>
-              <a href="https://twitter.com/Gday13"><i class="fa fa-twitter"></i></a>
-              <a href="https://www.linkedin.com/in/babajidekale?"><i class="fa fa-linkedin"></i></a>
-            </div>
+    <!--  HAMBURGER-->
+    <div class="hambuger js-hamburger">
+      <i class="content icon"></i>
+    </div>
+    <!--  HEADER-->
+    <div class="header js-header">
+      <div class="top">
+        <span class="remove js-remove">
+          <i class="remove icon"></i>
+        </span>
+        <!-- Logo -->
+        <section class="portrait">
+          <div class="">
           </div>
+          <h1 id="title">Babajide Kale</h1>
+          <p>Full-Stack Developer</p>
+        </section>
+
+        <!--  NAVIGATION -->
+        <section class="nav">
+          <a href="#home"><article class="">Home<i class="university icon"></i></article></a>
+          <a href="#portfolio"><article class="">Portfolio<i class="grid layout icon"></i></article></a>
+          <a href="#about"><article class="">About<i class="user icon"></i></article></a>
+          <a href="pdf/BabajideKale_Resume.pdf"><article class="icon fa-envelope">Resume<i class="mail icon"></i></article></a>
         </section>
       </div>
-    </header>
-    <div class="projects">
-      <h2>PORTFOLIO</h2>
-      <div class="break"></div>
-      <div class="project-container">
-            <div class="project">
-              <div class="MovieBusters card">
-                <div class="image">
-                  <h1>Movie Buster</h1>
-                  <img src="/assets/MovieBusters.png">
-                </div>
-                <div class="content">
-                  <div class="meta">
-                    <span><b>Languages Used:</b> Firebase, React.js,Css, Node.js</span>
-                  </div>
-                  <div class="links">
-                    <a href="https://moviebustersfe.herokuapp.com/" class="url">View</a>
-                    <a href="https://github.com/Bkale/MovieBusters2.0-FE" class="git">Github</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="project">
-              <div class="DrinksOnUs card">
-                <div class="image">
-                  <h1>DrinksOnUs</h1>
-                  <img src="/assets/DrinksOnUs.png">
-                </div>
-                <div class="content">
-                  <div class="meta">
-                    <span><b>Languages Used:</b>  React.js, Css.</span>
-                  </div>
-                  <div class="links">
-                    <a href="https://intense-castle-31240.herokuapp.com/" class="url">View</a>
-                    <a href="https://github.com/Bkale/Project3-FE" class="git">Github</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-    				<div class="project">
-              <div class="KalebViews card">
-                <div class="image">
-                  <h1>KalebViews</h1>
-                  <img src="/assets/kalebviews.png">
-                </div>
-                <div class="content">
-                  <div class="meta">
-                    <span><b>Languages Used:</b>  React.js, Css.</span>
-                  </div>
-                  <div class="links">
-                    <a href="http://kalebviews.com/Home" class="url">View</a>
-                    <a href="https://github.com/Bkale/Kalebviews" class="git">Github</a>
-                  </div>
-                </div>
-              </div>
-    				</div>
-            <div class="project">
-              <div class="TechJobs card">
-                <div class="image">
-                  <h1>TechJobs</h1>
-                  <img src="/assets/techJobs.png">
-                </div>
-                <div class="content">
-                  <div class="meta">
-                    <span><b>Languages Used:</b>  React.js, Css.</span>
-                  </div>
-                  <div class="links">
-                    <a href="https://techjobsfe.herokuapp.com/" class="url">View</a>
-                    <a href="https://github.com/Bkale/TechJobs" class="git">Github</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+
+      <!--  SOCIAL LINKS-->
+      <div class="bottom">
+          <a href="https://github.com/Bkale"><i class="github icon"></i></a>
+          <a href="https://twitter.com/Gday13"><i class="twitter icon"></i></a>
+          <a href="https://www.linkedin.com/in/babajidekale?"><i class="linkedin square icon"></i></a>
+          <a href="mailto:bkale09@gmail.com"><i class="mail icon"></i></a>
       </div>
     </div>
-    <footer>
-      <div class="f-links">
-        <a href="mailto:bkale09@gmail.com">CONTACT</a>
-        <a href="/pdf/BabajideKale_Resume1.pdf">RESUME</a>
-      </div>
-    </footer>
-    <script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
+    <!--  CLOSE HAMBURGER BUTTON-->
+
+    <!-- ########### MAIN CONTENT PAGE#################-->
+    <div class="main">
+      <!-- Intro -->
+      <section id="home" class="home">
+        <div class="container center js-homeContainer">
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="portfolio">
+
+        <div class="container portfolioContainer">
+          <h1>Portfolio</h1>
+          <article class="spotlight one evenBackgroundColor">
+            <div class="content">
+              <h1>Movie Busters</h1>
+              <p>In this project I developed an application to solve one problem,
+                find a place where users could log in, rate movies and add them to their favorites page.
+                Administrators needed to have an administrative page where they could add and remove movies
+                from the database.</p>
+              <p>Programming Language: React.js, Node.js, Firebase Authentication/Database  and CSS )</p>
+              <a href="https://moviebustersfe.herokuapp.com/" type="button" name="button">View</a>
+            </div>
+            <div class="imageContainer">
+              <div class="image"></div>
+            </div>
+          </article>
+
+          <article class="spotlight two oddBackgroundColor">
+            <div class="imageContainer">
+              <div class="image"></div>
+            </div>
+            <div class="content">
+              <h1>Drinks on Us</h1>
+              <p>This web application uses React.js and  Absolut API,
+                which allows the user to search for information on drinks either by name or base liquor.
+                In addition, it allows for user authentication, so each user can create an account,
+                login and save any drink to their account. </p>
+              <p>Programming Language: React.js,React Router, Materialize, Firebase,  Javascript, Ruby on Rails, Authentic Jobs API, Axios.</p>
+              <a href="https://intense-castle-31240.herokuapp.com/" type="button" name="button">View</a>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- About Me -->
+      <section id="about" class="about">
+        <div class="container aboutContainer">
+          <h1>About Me</h1>
+          <article class="aboutMain">
+            <div class="aboutLoop">
+              <h2>DIGITAL CREATIVE</h2>
+              <h1 class="js-aboutLoop">FRONT_END DEVELOPER</h1>
+            </div>
+            <div class="aboutContent">
+              <section class="aboutLeft">
+                <h2>I'm an experienced front-end developer with proficient communication skills and a broad range of leadership experiences.</h2>
+                <p>Highly creative and curious, I'm always looking to pick up a new programming language. I am currently a teaching assistant at New York Code & Design Academy.</p>
+              </section>
+              <section class="aboutRight">
+                <p>Born and raised in Lagos Nigeria. My family and I migrated to the US in 2003 where I continued my studies at St.Benedict's Preparatory School.</p>
+                <p>I graduated from William Paterson University with a Bachelor of Science in Computer Science in 2014.</p>
+                <p>Upon graduating I worked as a SQL Developer/ Software Developer at Medassets and followed that experience by joining the Web immersive program at General Assembly in New York, NY. Upon completing the program, I got a position at New York Code & Design Academy where I help new developers learn and master various programming languages such as HTML, CSS, Javascript, Node.js, React, Redux among others.</p>
+                <p>I enjoy teaching because it helps me understand code at a fundamental level and I get ask tons of unique questions about a concept that forces me to understand why programs work the way they do.</p>
+                <p>When I'm not working (whatever the hell that means), I'm writing or building a website for someone. I love lending a hand, so hit me up (bonus points if it has to do with photography:)).</p>
+              </section>
+            </div>
+          </article>
+        </div>
+      </section>
+
+    </div>
+
+    <div class="footer">
+
+    </div>
+
+
+
+
+<!-- SCRIPTS -->
+  <script src="./javascript/index.js"></script>
   </body>
 </html>

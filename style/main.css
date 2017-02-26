@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,600");
+@import url('https://fonts.googleapis.com/css?family=Cookie|Lobster|Tangerine|Yellowtail');
+@import url('https://fonts.googleapis.com/css?family=Acme|EB+Garamond|Lobster+Two');
+@import url('https://fonts.googleapis.com/css?family=Linden+Hill');
+@import url('https://fonts.googleapis.com/css?family=NTR');
+/*RESET*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+/*END RESET*/
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #E2E2E2;
+  color: white
+}
+
+/*#####NAVIGATION*/
+.hambuger{
+  display: none;
+  position: fixed;
+  margin: 2% 0 0 2%;
+  font-size: 1.6em;
+}
+.remove{
+  position: relative;;
+  display: none;
+  float: right;
+}
+.header{
+  width: 260px;
+  height: 100%;
+  background: #222729;
+  z-index: 1000;
+  position: fixed;
+}
+  .header .top{  /********************TOP*/
+    height: 88%
+  }
+  .header .top .portrait{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 12%
+  }
+
+  .header .top .portrait div{
+    height: 90px;
+    width: 43%;
+    background-image: url('../assets/portrait.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:  center right;
+    border-radius: 50%;
+    margin: 16% 0 11% 0;
+  }
+  .header .top .portrait h1{
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.4em;
+    line-height: 1em;
+  }
+  .header .top .portrait p{
+    position: relative;
+    display: block;
+    font-size: .8em;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.25em;
+    margin: 0.5em 0 0 0;
+  }
+  .header .top .nav{
+    margin-top: 10%;
+  }
+  .header .top .nav a{
+    margin-top: 10%;
+    text-decoration: none;
+  }
+  .header .top .nav article{
+    height: 60px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    font-size: 0.9em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .header .top .nav article i{
+    margin-right: 12%;
+    margin-left: 7%;
+    font-size: 1.4em;
+    color: #393D42;
+  }
+
+
+  .header .bottom{ /********************BOTTOM*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12%;
+  }
+  .header .bottom i{
+    font-size: 1.4em;
+    color: #D1D1D1;
+  }
+
+
+#logo {
+  position: relative;
+  margin: 1.75em 1.5em 1.5em 1.5em;
+  min-height: 48px;
+  cursor: default;
+  background-color: red
+}
+
+/*#############################   MAIN PAGE ##############################*/
+
+  /*#####  HOME PAGE  */
+  .container{
+    width: 80%;
+    height: 100%;
+    float: right;
+  }
+  .home{
+    height: 75vh;
+    background-image: url('../assets/home.jpg');
+    background-size: cover;
+    background-position: center right;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+  }
+.quote{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%
+}
+.quote h1{
+  font-size: 3.3em;
+  font-family: 'Tangerine', cursive;
+}
+.quote h2{
+  margin-top: 5%;
+  align-self: flex-end;
+}
+
+/* ###################
+      PORTFOLIO
+#####################*/
+.portfolio{
+  height: 823px;
+}
+.portfolioContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+}
+.portfolioContainer h1{
+  font-size: 2.3em;
+  color: black;
+  margin: 7% 0;
+  font-family: 'Lobster Two', cursive;
+  letter-spacing: 2.3px
+}
+
+/*SPOTLIGHT*/
+.portfolioContainer .spotlight{
+  height: 330px;
+  width: 100%;
+  display: flex;
+  box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075);
+}
+.portfolioContainer .spotlight .content{
+  height: 100%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+  .portfolioContainer .spotlight .content h1{
+    margin: 30px 0;
+    font-family: 'Jim Nightshade', cursive;
+    color: white;
+    letter-spacing: 1px;
+  }
+  .portfolioContainer .spotlight .content p{
+    width: 85%;
+    font-size: 1rem;
+    font-family: 'Linden Hill', serif;
+  }
+  .portfolioContainer .spotlight .content a{
+    font-size: 0.8rem;
+    height: 4em;
+    line-height: 4em;
+    border-radius: 4em;
+    padding: 0 3em;
+    margin-top: 3%;
+    background-color: #FC7A57;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+    color: #ffffff !important;
+  }
+.portfolioContainer .spotlight .imageContainer{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .evenBackgroundColor{
+    background-color: #243B4A;
+  }
+  .oddBackgroundColor{
+    background-color: #1B2C38;
+  }
+  /*.portfolioContainer .spotlight .content h2{
+    height: 100%;
+    width: 60%;
+  }*/
+
+.portfolioContainer .one .image{
+  height: 90%;
+  width: 90%;
+  background-image: url('../assets/movieBusters.png');
+  background-size: cover;
+  background-position: left;
+}
+
+.portfolioContainer .two .image{
+  height: 90%;
+  width: 90%;
+  background-image: url('../assets/drinksOnUs.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.portfolioContainer .three .image{
+  height: 90%;
+  width: 90%;
+  background-image: url('../assets/movieBusters.png');
+  background-size: cover;
+  background-position: left;
+}
+
+/* ###################
+      ABOUT
+#####################*/
+.about{
+  height: 100vh;
+}
+.aboutContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.aboutContainer h1{
+  font-size: 2.3em;
+  color: black;
+  margin: 7% 0;
+  font-family: 'Lobster Two', cursive;
+  letter-spacing: 2.3px
+}
+
+.aboutContainer .aboutMain{
+  background-image: url('../assets/aboutBackground.jpg');
+  background-size: cover;
+  background-repeat: repeat-y;
+  width: 100%;
+}
+
+.aboutContainer .aboutMain .aboutLoop{
+  margin: 5% 0 0 5%;
+}
+.aboutContainer .aboutMain .aboutLoop h2{
+  font-size: 1.5rem;
+  color: #272727
+}
+.aboutContainer .aboutMain .aboutLoop h1{
+  margin: 1% 0 5% 0;
+  font-size: 3rem;
+  color: #FC7A57;
+  animation: rotateWordsFirst 18s linear infinite 0s;
+}
+.aboutContainer .aboutMain .aboutContent{
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.aboutContainer .aboutMain .aboutContent .aboutLeft{
+  width: 45%;
+  height: 100%;
+}
+.aboutContainer .aboutMain .aboutContent .aboutLeft h2{
+  width: 70%;
+  margin-left: 15%;
+  color: #272727;
+  font-size: 1.6rem;
+  font-family: 'Architects Daughter', cursive;
+}
+.aboutContainer .aboutMain .aboutContent .aboutLeft p{
+  width: 70%;
+  margin: 6% 15%;
+  color: #272727;
+  font-size: 1.1rem;
+  font-family: 'NTR', sans-serif;
+}
+
+.aboutContainer .aboutMain .aboutContent .aboutRight{
+  width: 55%;
+  height: 100%
+}
+.aboutContainer .aboutMain .aboutContent .aboutRight p{
+  width: 90%;
+  color: #272727;
+  font-size: 1.1rem;
+  font-family: 'NTR', sans-serif;
+}
+@media screen and (max-width: 961px){
+  .header{
+    display: none;
+  }
+  .hambuger{
+    display: block;
+  }
+  .container{
+    width: 100%;
+  }
+  .portfolio{
+    height: 1760px;
+  }
+  .portfolioContainer .spotlight{
+    width: 100%;
+    height: 547px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075);
+  }
+  .portfolioContainer .spotlight .content{
+    width: 75%;
+    height: 60%;
+  }
+  .portfolioContainer .spotlight .imageContainer{
+    width: 75%;
+    height: 400px;
+  }
+}
