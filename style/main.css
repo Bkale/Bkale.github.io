@@ -332,10 +332,10 @@ body{
   .hambuger{
     display: block;
   }
-  .home .quote{
+  .home .container .quote{
     width: 65%
   }
-  .home .quote h1{
+  .home .container .quote h1{
     font-size: 2.3em
   }
   .container{
