@@ -246,7 +246,7 @@ body{
 .portfolioContainer .two .image{
   height: 90%;
   width: 90%;
-  background-image: url('../assets/drinksOnUs.png');
+  /*background-image: url('../assets/drinksOnUs.png');*/
   background-size: cover;
   background-position: center;
 }
