@@ -357,7 +357,11 @@ body{
   }
   .portfolioContainer .spotlight .content{
     width: 100%;
-    height: 60%;
+    height: 50%;
+  }
+  .portfolioContainer .spotlight .imageContainer{
+    width: 70%;
+    height: 50%;
   }
   .portfolioContainer .spotlight .content h1{
     width: 80%;
@@ -365,10 +369,6 @@ body{
   }
   .portfolioContainer .spotlight .content a{
     margin: 10px 0;
-  }
-  .portfolioContainer .spotlight .imageContainer{
-    width: 70%;
-    height: 50%;
   }
   .portfolioContainer .spotlight .imageContainer .image{
     width: 100%;
