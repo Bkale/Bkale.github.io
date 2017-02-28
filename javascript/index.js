@@ -1,4 +1,4 @@
-(()=>{
+(function(){
   const home = document.querySelector('.js-homeContainer')
   const hamburger = document.querySelector('.js-hamburger')
   const portfolioContainer = document.querySelector('.js-portfolioContainer')
@@ -62,7 +62,7 @@
 
   const titles = ['FRONT_END DEVELOPER','PHOTOGRAPHER','CONTENT-STRATEGIST', 'ENTREPRENEUR']
   let loopCount = 0;
-  window.setInterval(()=>{
+  window.setInterval(function(){
     if(loopCount === titles.length){
       loopCount = 0
     }
