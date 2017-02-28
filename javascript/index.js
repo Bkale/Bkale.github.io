@@ -1,13 +1,13 @@
 (function(){
-  const home = document.querySelector('.js-homeContainer')
-  const hamburger = document.querySelector('.js-hamburger')
-  const portfolioContainer = document.querySelector('.js-portfolioContainer')
-  const aboutContainer = document.querySelector('.js-aboutContainer')
-  const header = document.querySelector('.js-header')
-  const remove = document.querySelector('.js-remove')
-  const aboutLoop = document.querySelector('.js-aboutLoop')
+  var home = document.querySelector('.js-homeContainer')
+  var hamburger = document.querySelector('.js-hamburger')
+  var portfolioContainer = document.querySelector('.js-portfolioContainer')
+  var aboutContainer = document.querySelector('.js-aboutContainer')
+  var header = document.querySelector('.js-header')
+  var remove = document.querySelector('.js-remove')
+  var aboutLoop = document.querySelector('.js-aboutLoop')
 
-  const quotes = [
+  var quotes = [
     {
       quote:'The best preparation for tomorrow is doing your best today.',
       author: 'H. Jackson Brown, Jr.'
@@ -58,8 +58,8 @@
     `
   }
 
-  const titles = ['FRONT_END DEVELOPER','PHOTOGRAPHER','CONTENT-STRATEGIST', 'ENTREPRENEUR']
-  let loopCount = 0;
+  var titles = ['FRONT_END DEVELOPER','PHOTOGRAPHER','CONTENT-STRATEGIST', 'ENTREPRENEUR']
+  var loopCount = 0;
   window.setInterval(function(){
     if(loopCount === titles.length){
       loopCount = 0
