@@ -6,8 +6,6 @@
   const header = document.querySelector('.js-header')
   const remove = document.querySelector('.js-remove')
   const aboutLoop = document.querySelector('.js-aboutLoop')
-  console.log(portfolioContainer);
-  console.log(aboutContainer);
 
   const quotes = [
     {
@@ -140,16 +138,16 @@
 
 
 // #########  CLICK EVENTS #############
-  document.addEventListener("DOMContentLoaded",async () => {
+  document.addEventListener("DOMContentLoaded",function(){
        renderQuote(quotes[ Math.floor((Math.random() * (quotes.length - 0) + 0))])
   })
-  hamburger.addEventListener('click',() => {
+  hamburger.addEventListener('click',function(){
     header.style.display = "block"
     remove.style.display = "block"
     portfolioContainer.style.width = "80%"
     aboutContainer.style.width = "80%"
   })
-  remove.addEventListener('click', () => {
+  remove.addEventListener('click', function(){
     header.style.display = "none"
     remove.style.display = "none"
     portfolioContainer.style.width = "100%"
