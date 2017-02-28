@@ -1,10 +1,13 @@
 (()=>{
   const home = document.querySelector('.js-homeContainer')
   const hamburger = document.querySelector('.js-hamburger')
+  const portfolioContainer = document.querySelector('.js-portfolioContainer')
+  const aboutContainer = document.querySelector('.js-aboutContainer')
   const header = document.querySelector('.js-header')
   const remove = document.querySelector('.js-remove')
   const aboutLoop = document.querySelector('.js-aboutLoop')
-
+  console.log(portfolioContainer);
+  console.log(aboutContainer);
 
   const quotes = [
     {
@@ -67,41 +70,41 @@
     loopCount++
   },3000)
 
-  // Slideshow Background.
+
+
+
+
+
+  // // // Slideshow Background.
   // (function() {
   //   // Settings.
   //     var settings = {
-  //       // Images (in the format of 'url': 'alignment').
   //         images: {
-  //           'images/bg01.jpg': 'center',
-  //           'images/bg02.jpg': 'center',
-  //           'images/bg03.jpg': 'center'
+  //           '../assets/home.jpg': 'center',
+  //           '../assets/home.jpg': 'center',
+  //           '../assets/home.jpg': 'center'
   //         },
-  //       // Delay.
   //         delay: 6000
   //     };
   //
   //     // Vars.
-  //     var	pos = 0, lastPos = 0,
-  //       $wrapper, $bgs = [], $bg,
-  //       k, v;
+  //     var	pos = 0, lastPos = 0,$wrapper, $bgs = [], $bg,k, v;
   //
-  //   // Create BG wrapper, BGs.
+  //     // Create BG wrapper, BGs.
   //     $wrapper = document.createElement('div');
-  //       $wrapper.id = 'bg';
-  //       $body.appendChild($wrapper);
+  //     $wrapper.id = 'bg';
+  //     $body.appendChild($wrapper);
   //
   //     for (k in settings.images) {
   //       // Create BG.
-  //         $bg = document.createElement('div');
-  //           $bg.style.backgroundImage = 'url("' + k + '")';
-  //           $bg.style.backgroundPosition = settings.images[k];
-  //           $wrapper.appendChild($bg);
-  //
+  //       $bg = document.createElement('div');
+  //       $bg.style.backgroundImage = 'url("' + k + '")';
+  //       $bg.style.backgroundPosition = settings.images[k];
+  //       $wrapper.appendChild($bg);
   //       // Add it to array.
-  //         $bgs.push($bg);
+  //       $bgs.push($bg);
   //     }
-  //
+  //     console.log($bgs);
   //   // Main loop.
   //     $bgs[pos].classList.add('visible');
   //     $bgs[pos].classList.add('top');
@@ -132,6 +135,10 @@
   // })();
 
 
+
+
+
+
 // #########  CLICK EVENTS #############
   document.addEventListener("DOMContentLoaded",async () => {
        renderQuote(quotes[ Math.floor((Math.random() * (quotes.length - 0) + 0))])
@@ -139,9 +146,13 @@
   hamburger.addEventListener('click',() => {
     header.style.display = "block"
     remove.style.display = "block"
+    portfolioContainer.style.width = "80%"
+    aboutContainer.style.width = "80%"
   })
   remove.addEventListener('click', () => {
     header.style.display = "none"
     remove.style.display = "none"
+    portfolioContainer.style.width = "100%"
+    aboutContainer.style.width = "100%"
   })
 })();

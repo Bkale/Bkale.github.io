@@ -32,7 +32,7 @@ body{
 
 /*#####NAVIGATION*/
 .hambuger{
-  display: none;
+  display: flex;
   position: fixed;
   margin: 2% 0 0 2%;
   font-size: 1.6em;
@@ -43,6 +43,7 @@ body{
   float: right;
 }
 .header{
+  display: none;
   width: 260px;
   height: 100%;
   background: #222729;
@@ -51,6 +52,10 @@ body{
 }
   .header .top{  /********************TOP*/
     height: 88%
+  }
+  .header .top .remove i{  /********************TOP*/
+    margin: 70% 55% 0 0;
+    font-size: 1.2em
   }
   .header .top .portrait{
     display: flex;
@@ -134,7 +139,7 @@ body{
 
   /*#####  HOME PAGE  */
   .container{
-    width: 80%;
+    width: 100%;
     height: 100%;
     float: right;
   }
@@ -398,3 +403,77 @@ body{
     font-size: 12px
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.home{
+  height: 75vh;
+  background-image: url('../assets/home.jpg');
+  background-size: cover;
+  background-position: center right;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+  transition: opacity 2s ease-in-out;
+  z-index: 1;
+
+}
+
+/*.home {
+	transition: opacity 2s ease-in-out;
+	left: 0;
+	opacity: 0.25;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}*/
+
+/*.home div {
+	transition: opacity 3s ease, visibility 3s;
+	background-size: cover;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	visibility: hidden;
+	width: 150%;
+}
+
+.home div.visible {
+	animation: bg 45s linear infinite;
+	opacity: 1;
+	visibility: visible;
+	z-index: 1;
+}
+
+.home div.visible.top {
+	z-index: 2;
+}
+
+.home div:only-child {
+	animation-direction: alternate !important;
+}
+
+body.is-loading #bg {
+	opacity: 0;
+}
+
+@keyframes bg {
+		0% {
+			transform: translateX(0);
+		}
+
+		100% {
+			transform: translateX(-25%);
+		}
+	}*/*/
