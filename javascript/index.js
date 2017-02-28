@@ -51,7 +51,7 @@
       author: 'Ralph Waldo Emerson'
     }
   ]
-  const renderQuote = (quote) => {
+  function renderQuote(quote){
     home.innerHTML = `
     <div class="quote">
       <h1>~ ${quote.quote}<h1>
